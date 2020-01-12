@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* reset */
+img{
+    max-width:100%;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 720px;
+}
+
+.swiper-container .swiper-wrapper img {
+    width: 100%;
+}
+
+/*좌우버튼*/
+.swiper-button-prev::before {
+    content: '\f053';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #f00;
+}
+
+.swiper-button-next::before {
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #f00;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: url();
+    right: 30px;
+    left: auto;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: url();
+    left: 30px;
+    right: auto;
+}
+
+/*불릿*/
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f00;
+}
